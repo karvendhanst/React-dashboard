@@ -1,13 +1,116 @@
-body {
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.sidebar{
+  background-color: rgb(8, 8, 86);
+  height: 100vh;
+  width: 250px;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.sidebar_img{
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.sidebar_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.sidebar_content{
+  margin-top: 20px;
+  color: #fff;
+  line-height: 2;
+}
+.sidebar_content button{
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-section{
+  margin-left: 250px;
+  padding: 25px;
 }
+.main-btns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.main-btns button{
+  background-color: rgb(138, 29, 239);
+  color: #fff;
+}
+.main-btns button:hover{
+  background-color: rgb(138, 29, 239);
+  color: #fff;
+}
+
+.main-form{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.main-form .btn{
+  width: 100%;
+  background-color: rgb(138, 29, 239);
+}
+.main-form .btn:hover{
+  width: 100%;
+  background-color: rgb(138, 29, 239);
+}
+.table-status{
+  color: rgb(5, 182, 76) !important;
+}
+.table-status-inactive{
+  color: rgb(198, 32, 13) !important;
+}
+.table-btns{
+  display: flex;
+  gap: 5px;
+}
+.table-btns .btn{
+  border: 1px solid #222;
+}
+.table-btns .btn:hover{
+  border: 1px solid #222;
+}
+.form-control{
+  width: 100%;
+}
+
+@media screen and (max-width: 940px){
+  .sidebar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 10px 15px;
+  }
+  .sidebar_content{
+    line-height: 1;
+    margin-top: -2px;
+  }
+  .sidebar_img{
+    width: 80px;
+    height: 80px;
+  }
+  .main-section{
+    margin-left: 0;
+    margin-top: 100px;
+  }
+}
+
+
